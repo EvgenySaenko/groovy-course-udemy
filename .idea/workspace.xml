@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/basics.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/annotations/HomeController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/annotations/HomeController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/class_exercise/twiterdemo/Tweet.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/class_exercise/twiterdemo/Tweet.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" afterDir="false" />
+    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="fix link">
+      <change beforePath="$PROJECT_DIR$/basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/basics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +30,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Groovy.Main.executor": "Run",
     "Groovy.app (1).executor": "Run",
     "Groovy.app.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy/src/com/evgenys"
+    "last_opened_file_path": "D:/Develop/projects/Java/Java/work-project/uamc-core"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,7 +48,18 @@
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
     </key>
   </component>
-  <component name="RunManager" selected="Groovy.app (1)">
+  <component name="RunManager" selected="Groovy.Main">
+    <configuration name="Main" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="groovy-course-udemy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/Main.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app (1)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="groovy-course-udemy" />
       <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/basics/grape/app.groovy" />
@@ -76,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Groovy.Main" />
         <item itemvalue="Groovy.app (1)" />
         <item itemvalue="Groovy.app" />
       </list>
@@ -98,11 +107,29 @@
       <option name="project" value="LOCAL" />
       <updated>1706236787112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add Readme">
+      <option name="closed" value="true" />
+      <created>1706237154375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706237154375</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix link">
+      <option name="closed" value="true" />
+      <created>1706237243817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706237243817</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="add Readme" />
+    <MESSAGE value="fix link" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix link" />
   </component>
 </project>

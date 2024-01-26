@@ -16,6 +16,8 @@
 + [Аннотации](#Аннотации)
 + [Операторы](#Операторы)
 + [Grape](#Grape)
++ [Operator overloading](#Operator-overloading)
++ [String](#String)
 
 
 
@@ -187,8 +189,7 @@ This is multiline comment
 ```
 
 ```groovy
-Groovy duck comment
-Используется для документации кода
+//Groovy duck comment используется для документации кода
 /**
 * For class or method
 *
@@ -282,7 +283,14 @@ d.languages << "Java"
 
 
 ## Numbers
->Судя по примерам ниже в Groovy нет примитивов и он работает с классами обертками, подбирая автоматом нужный.
+
+>Факты о числах в Groovy
+ 
++ Groovy все объекты у него нет примитивов
++ def x = 10 - groovy по умолчанию присвоит Integer
++ 1.23 или другое число с плавающей точкой в groovy это BigDecimal
++ Когда мы используем def Groovy подбирает автоматот тип данных
++ Тип данных в переменной объявленной через `def` - может меняться
 
 ```groovy
 1.getClass().getName()// java.lang.Integer
@@ -301,6 +309,94 @@ y.class // class java.lang.Integer
 
 def x = 5.5d
 x.class // class java.lang.Double
+```
+
+> ### def - `используется, если нам не важен тип и он может меняться`
++ ВАЖНО!! - тип переменной объявленной через `def` может меняться
+
+```groovy
+def x = 10
+x.getClass().getName()//class java.lang.Integer
+
+x = "Dan"
+x.class// java.lang.String
+```
+
+
+```groovy
+def myFloat = (float) 1.0//так называемый каст
+println myFloat.class//class java.lang.Float здесь мы явно говорим что нам не нужен BigDecimal а нужен Float
+
+// в groovy если хоть один из операндов является числом с плавающей точкой - результатом будет всегда Double
+// в Java бы результатом был бы Float
+Float f = 5.25
+Double d = 10.50
+
+def result = d / f
+println result
+println result.class//class java.lang.Double
+
+Float a = 10.75
+FLoat b = 53.75
+def result2 = b / a
+println result2
+println result2.class//class java.lang.Double
+
+// If either operand is a big decimal 
+
+def x = 34.5 // BigDecimal
+def y = 15 //Integer
+def bigResult = x / y //результатом груви делает в сторону большего числа - BigDecimal
+println bigResult
+println bigResult.class//class java.math.BigDecimal
+
+// If either operand is a BigInteger the result is a BigInteger
+// If either operand is a Long the result is a Long
+// If either operand is a Integer the result is an Integer
+
+// Double division
+println 5.0d - 4.1d//0.9000000000000004 - и тут будет немного ошибка
+println 5-4.1//0.9
+
+// Integer Division
+
+def intDiv = 1 / 2// в груви мы получаем 0.5, потому что идем на повышение типа - BigDecimal
+println intDiv // this is much different than Java where we would get 0 
+println intDiv.getClass().getName()
+println 1.intdiv(2)//используя метод intdiv мы видим как бы было в Java ответ был бы - 0 
+
+
+// times | upto | downto | step
+
+20.times {
+    print '-'//напечатает 20 "-" вот так: ---------------------
+}
+
+// пройти от 1 до 10(включая 10)  и распечатаем это 12345678910
+1.upto(10) { num ->
+    println num
+}
+
+// противоположный верхнему методу, распечатает 10987654321
+10.downto(1) { num ->
+    println num
+}
+// переход от 0-1 с шагом 0.1, вывод: 0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9
+0.step(1,0.1) { num ->
+    println num
+}
+```
+
+>### Приведение типов
+
+```groovy
+// GDK Methods
+assert 2 == 2.5.toInteger() // conversion
+assert 2 == 2.5 as Integer  // enforced coercion
+assert 2 == (int) 2.5 // cast
+
+assert '5.50'.isNumber()//является ли строка числом будет true
+assert 5 == '5'.toInteger()
 ```
 
 [Вернуться в меню _Basics_](#Basics)
@@ -586,11 +682,208 @@ http://docs.groovy-lang.org/latest/html/documentation/grape.html
 
 
 
-## Grape
+## Operator overloading
+
+https://groovy-lang.org/operators.html#Operator-Overloading
+>Все операторы Groovy (не компараторы) имеют соответствующий метод, который вы можете реализовать
+в своих собственных классах. Единственные требования :
+
++ чтобы ваш метод был общедоступным
++ имел правильное имя и правильное количество аргументов.
++ Типы аргументов зависят от того, какие типы вы хотите поддерживать в правой части оператора.
+
+```groovy
+
+def a = 1
+def b = 2
+
+//ниже две записи одинаково правильные, в первой числовой класс использует метод plus закулисами
+println a + b//3
+println a.plus(b)//3
+
+def s1 = "Hello"
+def s2 = ", World!"
+
+//ниже две запись одинаковые, просто первая класс Стринг закулисами использует метод plus
+println s1 + s2//"Hello, World"
+println s1.plus(s2)//"Hello, World"
+
+//Но если нам нужно сложить просто два объекта 
+class Account {
+    BigDecimal balance
+}
+Account savings = new Account(balance:100.00)
+Account checking = new Account(balance:500.00)
+
+println savings + checking// мы получим ошибку MissingMethodException: No signature of method: Account.plus() is applicable for argument types итд
+
+//Но если мы объясним как складывать, добавив метод plus то все будет работать
+class Account {
+    BigDecimal balance
+
+    Account plus(Account other) {
+        new Account( balance: this.balance + other.balance )//можно написать так this.balance + other.balance
+    }
+
+    String toString(){
+        "Account Balance: $balance"
+    }
+}
+
+Account savings = new Account(balance:100.00)
+Account checking = new Account(balance:500.00)
+
+println savings
+println checking
+println savings + checking// Account Balance: 600.00
+
+```
+
+[Вернуться в меню _Basics_](#Basics)
+
+
+
+## String
+####  Ниже описал как смог самое основное, подробнее можно прочитать в документации ниже
+https://groovy-lang.org/syntax.html#all-strings
+
+> Groovy поддерживает java.lang.String и groovy.lang.GString
+> String это простые строки в которых ничего не вставлено
+> GString называют интерполированными строками, когда в строку вставляем поле или выражение.
+
++ Строки в одинарных кавычках являются простыми java.lang.String и не поддерживают интерполяцию.
++ Строки с тройными одинарными кавычками являются простыми java.lang.String и не поддерживают интерполяцию.
++ Все строки Groovy можно объединить с помощью `+` оператора как и в Java(конкатенация)
++ Интерполировать(вставить) переменную или выражение можно только в строки с двойными кавычками `"`  `"""` в одинарную или мульти строку, так же созданные через `/`
+
+### GString и строковые хеш-коды
+
+> Обычные строки Java неизменяемы, тогда как результирующее строковое представление GString может варьироваться 
+> в зависимости от его интерполированных значений. Даже для одной и той же результирующей строки GString и Strings
+> не имеют одинакового хэш-кода.
+
+```groovy
+assert "one: ${1}".hashCode() != "one: 1".hashCode()//хэш коды не равны
+```
+>!!!Важно для ключа Map лучше использовать строго String
+
+>В Java имеет значение как мы создаем символ или строку
+
++ символ в одинарных кавычках `char c = 'c'`
++ строку в двойных `String str = "this is a string"`
+
+>В Groovy все будет String неважно в каких кавычках мы создадим
+
+```groovy
+// Java ::
+char c = 'c'
+println c.class//class java.lang.Character
+
+String str = "this is a string"
+println str.class//class java.lang.String
+
+// Groovy ::
+def c2 = 'c'
+println c2.class//class java.lang.String
+
+def str2 = 'this is a string'
+println str2.class//class java.lang.String
+```
+
+### В Groovy есть два типа строк
++ String
++ GString
+
+### Итнерполяция строк
+
+```groovy
+String name = "Dan"//так мы делаем в Java
+String msg = "Hello " + name + "..."
+println msg
+
+//Groovy имеет более чистое решение
+String msg2 = "Hello ${name}"//Важно делать это в двойных кавычках
+println msg2
+
+String msg3 = 'Hello ${name}'//С одинарными это не сработает, мы просто распечатаем фактически то что есть
+println msg3
+
+String msg4 = "We can evaulate expressions here: ${1 + 1}"
+println msg4//We can evaulate expressions here: 2
+```
+ 
+### Multiline strings
++ Если нам нужно просто вывести многострочное сообщение то используем три одинарные кавычки `'''`
++ Если же мы будем передавать туда переменную или выражение то используем двойные `"""`
+```groovy
+
+def aLargeMsg = """
+A 
+Msg
+goes 
+here and 
+keeps going ${1+1}
+"""
+
+println aLargeMsg
+```
+
+### dollar slashy
+
++ $/ .. /$ открытие и закрытие доллара
++ все что находится между ними, является строкой
+
+```groovy
+def folder = "C:\groovy\dan\foo\bar"//мы могли бы сделать конечно C:\\groovy\\dan\\foo\\bar но есть другой способ
+println folder//когда мы попытаемся распечатать: unexpected char '\' at...
+
+// используем конструкцию $/ .. /$ открытие и закрытие доллара
+// все что между ними будет восприниматься как строка
+def folder2 = $/C:\groovy\dan\foo\bar/$
+
+def slash = /double slesh/ // так тоже можно создать строку
+```
+
+### Slashy string
+
++ Строки с косой чертой особенно полезны для определения регулярных выражений и шаблонов, поскольку нет необходимости экранировать обратную косую черту.
++ Косые строки являются многострочными
++ Косые строки можно рассматривать как еще один способ определения GString, но с другими правилами экранирования.
++ Пустую строку нельзя создать через двойной слеш `//`- он воспринимается как комментарий 
+
+```groovy
+def slash = /double slesh/ // так тоже можно создать строку
+
+def fooPattern = /.*foo.*/
+assert fooPattern == '.*foo.*'
+
+//Только прямая косая черта должна быть экранирована обратной косой чертой:
+def escapeSlash = /The character \/ is a forward slash/
+assert escapeSlash == 'The character / is a forward slash'
+
+//Косые строки являются многострочными:
+def multilineSlashy = /one
+    two
+    three/
+
+assert multilineSlashy.contains('\n')
+
+//Косые строки можно рассматривать как еще один способ определения GString, но с другими правилами экранирования. Следовательно, они поддерживают интерполяцию:
+
+def color = 'blue'
+def interpolatedSlashy = /a ${color} car/
+
+assert interpolatedSlashy == 'a blue car'
+```
 
 
 [Вернуться в меню _Basics_](#Basics)
 
+
+## Grape
+
+
+[Вернуться в меню _Basics_](#Basics)
 
 
 
