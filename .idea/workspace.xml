@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/groovy_4_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-course-udemy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/AngryBirds.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer_Finish.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/app.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/comments/shebang.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/ImportsDemo.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/IntelliJImports.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/src/demo.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/keywords/Application.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/numbers/numbers.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/scripts/myscript.groovy" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2b5uXn1bljJi5bv5llhqJ23LSot" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Groovy.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy/src/com/evgenys"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy\src\com\evgenys" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="groovy-course-udemy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/basics/classes/app.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/com/evgenys/basics/classes" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Groovy.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="" />
+      <created>1705517447451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705517447451</updated>
+    </task>
+    <servers />
+  </component>
+</project>
