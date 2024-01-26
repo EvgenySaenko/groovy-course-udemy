@@ -1,7 +1,7 @@
 package com.evgenys.basics.annotations
 // Spring MVC Controller
 
-@Controller
+//@Controller
 class HomeController {
 
 

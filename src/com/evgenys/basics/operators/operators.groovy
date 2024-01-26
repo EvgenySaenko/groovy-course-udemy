@@ -46,7 +46,7 @@ assert true || false
         result = 'Not found'
     }
     
-    String s = ""
+//    String s = ""
     result = ( s != null && s.length() > 0 ) ? 'Found' : 'Not Found'
 
     // Elvis Operator
@@ -58,11 +58,11 @@ assert true || false
     // Safe Navigation Operator
 
     // Java
-    Person p = new Person()
-    if( p.address != null ) {
-        Address address = p.address
-        address.first = "1234 Main"
-    }
+//    Person p = new Person()
+//    if( p.address != null ) {
+//        Address address = p.address
+//        address.first = "1234 Main"
+//    }
     
     // Groovy
     def address = p?.address

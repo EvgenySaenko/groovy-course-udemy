@@ -4,35 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/groovy_4_0_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-course-udemy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/AngryBirds.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer_Finish.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/app.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/comments/shebang.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/ImportsDemo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/IntelliJImports.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/imports/IntelliJImports/src/demo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/keywords/Application.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/numbers/numbers.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/basics/scripts/myscript.groovy" afterDir="false" />
+    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/basics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/annotations/HomeController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/annotations/HomeController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/assertions/assertions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/class_exercise/twiterdemo/Tweet.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/class_exercise/twiterdemo/Tweet.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/classes/Developer.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Groovy.app (1).executor": "Run",
     "Groovy.app.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -68,8 +47,22 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy\src\com\evgenys" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Groovy.app (1)">
+    <configuration name="app (1)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="groovy-course-udemy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/basics/grape/app.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/com/evgenys/basics/grape" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="groovy-course-udemy" />
       <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/basics/classes/app.groovy" />
@@ -83,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Groovy.app (1)" />
         <item itemvalue="Groovy.app" />
       </list>
     </recent_temporary>
@@ -96,6 +90,19 @@
       <option name="presentableId" value="Default" />
       <updated>1705517447451</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1706236787111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706236787112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
