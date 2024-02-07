@@ -18,6 +18,7 @@
 + [Grape](#Grape)
 + [Operator overloading](#Operator-overloading)
 + [String](#String)
++ [Регулярные выражения](#Регулярные-выражения)
 
 
 
@@ -880,11 +881,122 @@ assert interpolatedSlashy == 'a blue car'
 [Вернуться в меню _Basics_](#Basics)
 
 
-## Grape
+## Регулярные выражения
+
+>Груви использует API регулярных выражений Java а так же добавляет три метода которые упрощают работу с ними.
+
++ `find operator(=~)` - можно использовать для создания оператора сопоставления  java.util.regex.Matcher
+В основном позволяет найти что-то в блоке текста
+
++ `match operator (==~)` - это разновидность оператора поиска, которая возвращает не Matcher а boolean(логическое значение) и требует строгого соответствия входной строки
+
++ `pattern operator(~string)` - оператор шаблона (~) предоставляет простой способ создания экземпляра java.util.regex.Pattern
+Используем тильду и потом некий шаблон (строку)
+
+Примеры регулярных выражений
+
+`b[aeiou]t` - сопоставления где первая буква "b" последняя "t" а между ними может быть одна из этих букв "aeiou" - bat, bet, bit, bot, but
+
+Не плохой сайт для погружения в регулярные выражения
+https://www.regular-expressions.info/
+https://www.regular-expressions.info/refquick.html - почти все символы
+
+\b - граница слова
+\\ - экранируем слеш если хотим "\"
+\\\\ - обратный слеш
+
+> В Groovy мы узнали, что можно по разному создавать строки, но способ с `/.../`
+> очень удобен для регулярных выражений, потому что там не нужно экранировать напрмиер обратный слеш
+> как в примере ниже
+
+```groovy
+//Java simple Pattern
+
+import java.util.regex.*;
+
+Pattern pattern = Pattern.compile("a\\\\b")
+println pattern // выведет - a
+println pattern.class // class. java.util.regex.Pattern
+
+
+//What patterns will look like in Groovy
+
+String slashy = /a\b/ - нам не нужно писать так "a\\\\b" 
+
+// Но есть ситуации когда создание строки через косые строки не очень хорошая идея
+String url = /http://someurl.com/blog/ - и тут она будет работать до "blog"
+//В таком случае приходит на помощь $/.../$ 
+String url2 = $/http://someurl.com/blog/$ - тут все будет гуд
+
+```
+> В Groovy мы можем не использовать все это `Pattern pattern = Pattern.compile("a\\\\b")`
+> А просто использовать оператор тильды о котором писали выше, он заменяет создание инстанса
+
+```groovy
+def pattern =~/a\b/
+println pattern.class// class java.util.regex.Pattern
+```
+
+### Find & Match
+
+```groovy
+def text = "Being a Cleveland Sports Fan is no way to go through life"
+def pattern = ~/Cleveland Sports Fan/ 
+def finder = text =~ pattern// вернет инстанс сопоставления всех точек по регулярному выражению
+
+
+println finder // java.util.regex.Matcher[pattern=Cleveland Sports Fan region=0.57 lastmatch=]
+println finder.size()// 1 - одно сопоставление
+//рассмотрим matcher
+def matcher = text ==~ pattern
+println matcher// вернет false потому что это не сопоставимо , у нас часть строки только
+
+//рассмотрим точное сопоставление где будет true
+
+def text = "Cleveland Sports Fan"
+def pattern = ~/Cleveland Sports Fan/
+def matcher = text ==~ pattern
+
+println matcher//true
+
+//и можем использовать это в условии
+if(matcher) {
+    //do something
+}
+
+
+//пример использования метода replaceFirst
+def text = "Being a Cleveland Sports Fan is no way to go through life"
+def pattern = ~/Cleveland Sports Fan/
+text = text.replaceFirst(pattern, "Buffalo")
+println text // Being a Buffalo is no way to go through life
+
+```
+
 
 
 [Вернуться в меню _Basics_](#Basics)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Grape
+
+
+[Вернуться в меню _Basics_](#Basics)
 
 
 ## Grape
