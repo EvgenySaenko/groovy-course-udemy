@@ -4,6 +4,8 @@
 
 + [Range](#Range)
 + [List](#List)
++ [Map](#Map)
++ [Examples methods](#Examples-methods)
 
 
 
@@ -18,6 +20,8 @@
 > 
 >Официальная документация https://groovy-lang.org/api.html
 > Слева выбрать пакет groovy.lang а ниже Интерфейсы и Range
+> 
+> http://docs.groovy-lang.org/latest/html/gapi/groovy/lang/Range.html
 
 > Вот несколько примеров литералов диапазона:
 
@@ -96,6 +100,8 @@ assert Days.WEDNESDAY == --wednesday
 ## List
 
 >__List(список)__
+> 
+> http://docs.groovy-lang.org/latest/html/groovy-jdk/java/util/List.html
 > 
 > Официальная документация https://groovy-lang.org/gdk.html слева выбрать java.util а ниже List
 >
@@ -185,24 +191,104 @@ println evens.class.name//java.util.TreeSet
 
 
 
+## Map
+
+>http://docs.groovy-lang.org/latest/html/groovy-jdk/java/util/Map.html
+
+>По умолчанию ключ у мапы - тип String поэтому мы можем не оборачивать его в двойные кавычки
+
+```groovy
+def map = [:] //[:] - пустая мапа
+println map
+println map.getClass().getName()//java.util.LinkedHashMap
+
+def person = [first:"Dan",last:"Vega",email:"danvega@gmail.com"]
+println person // [first:"Dan",last:"Vega",email:"danvega@gmail.com"]
+println person.first //Dan
+
+person.twitter = "@therealdanvega"
+println person // [first:"Dan",last:"Vega",email:"danvega@gmail.com",twitter: "@therealdanvega"]
+
+def emailKey = "EmailAddress"
+def twitter = [username:"@therealdanvega",'Email Address':"danvega@gmail.com"] //если хотим добавить такой ключ 'Email Address' нужно обернуть его в кавычки
+def twitter = [username:"@therealdanvega",(emailKey):"danvega@gmail.com"] // если передаем ключ как переменную - нужно обернуть его в () - тогда будет работать
+
+println person.size()
+println person.values()// можно использовать Java API и достать все значения[value, value, value] псевдовывод
+println person.sort()
+
+// looping through person
+for( entry in person ) {
+    println entry //выведет пары ключ=значение - first=Dan
+}
+
+for( key in person.keySet() ) {
+    println "$key:${person[key]}" //first:Dan
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Grape
+```
 
 
 [Вернуться в меню _collections_](#collections)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Examples methods
+
+```groovy
+List people = [
+    [name:'Jane',city:"New York City"],
+    [name:'John',city:"Cleveland"],
+    [name:'Mary',city:"New York City"],
+    [name:'Dan',city:"Cleveland"],
+    [name:'Tom',city:"New York City"],
+    [name:'Frank',city:"New York City"],
+    [name:'Jason',city:"Cleveland"]    
+]
+
+println people.find { person -> person.city == "Cleveland" }//вернет первого попавшегося
+println people.findAll { person -> person.city == "Cleveland" }//вернет всех сопоставимых
+
+println people.any { person -> person.city == "Cleveland" }//true/false если есть хоть один такой
+println people.every { person -> person.city == "Cleveland" }//true/false если все такие
+println people.every { person -> person.name.size() >= 3 }
+
+//вренет мапу сгруппированную по городам
+//первое значение - New York City - в нем мапа людей из нью йорка
+//второе значение - Cleveland - в котором мапа людей из кливленда
+def peopleByCity = people.groupBy { person -> person.city } 
+println peopleByCity
+def newyorkers = peopleByCity["New York City"]//достали мапу ньюйоркцев
+def clevelanders = peopleByCity.Cleveland //достали мапу кливлендцев =)
+
+clevelanders.each {
+    println it.name
+}
+```
+[Вернуться в меню _collections_](#collections)
+
+
+
+
+
+
+
+
+
+
 
 
 

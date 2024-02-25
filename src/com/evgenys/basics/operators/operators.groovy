@@ -51,7 +51,7 @@ assert true || false
 
     // Elvis Operator
     displayName = user.name ? user.name : 'Anonymous'   
-    displayName = user.name ?: 'Anonymous'   
+    displayName = user.name ?: 'Anonymous'   //в Elvis отличие от тернарного, мы просто убираем условие true
 
 // Object Operators
 

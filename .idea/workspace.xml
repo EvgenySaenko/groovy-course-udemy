@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="add part string">
-      <change afterPath="$PROJECT_DIR$/collections.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/exercise/Lists.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/exercise/Maps.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/exercise/RangeDays.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/lists/Lists.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/maps/Maps.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/ranges/DaysDemo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/ranges/ForLoops.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/collections/ranges/RangeDemo.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="add collections.md">
+      <change afterPath="$PROJECT_DIR$/closures.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlStructures.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Basics.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Collections.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Delegates.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/FluentInterfaces.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/FluentInterfaces2.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Scope.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/curry.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/exercise.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/params.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/vargs.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/conditional.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/exceptions.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/exercise.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/looping.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/truth.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/basics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +55,25 @@
     "Groovy.RangeDemo.executor": "Run",
     "Groovy.app (1).executor": "Run",
     "Groovy.app.executor": "Run",
+    "Groovy.params.executor": "Run",
+    "Groovy.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy"
+    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy/src/com/evgenys"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy\src\com\evgenys" />
+      <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
     </key>
   </component>
-  <component name="RunManager" selected="Groovy.Lists">
+  <component name="RunManager" selected="Groovy.test">
     <configuration name="DaysDemo" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="groovy-course-udemy" />
       <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/collections/ranges/DaysDemo.groovy" />
@@ -86,17 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="groovy-course-udemy" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/Main.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RangeDemo" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="groovy-course-udemy" />
       <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/collections/ranges/RangeDemo.groovy" />
@@ -108,12 +107,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app (1)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+    <configuration name="params" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="groovy-course-udemy" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/basics/grape/app.groovy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/closures/params.groovy" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/com/evgenys/basics/grape" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/com/evgenys/closures" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="groovy-course-udemy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/com/evgenys/closures/test.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/com/evgenys/closures" />
       <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Groovy.test" />
+        <item itemvalue="Groovy.params" />
         <item itemvalue="Groovy.Lists" />
         <item itemvalue="Groovy.DaysDemo" />
         <item itemvalue="Groovy.RangeDemo" />
-        <item itemvalue="Groovy.Main" />
-        <item itemvalue="Groovy.app (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706263496738</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add collections.md">
+      <option name="closed" value="true" />
+      <created>1707338822609</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707338822609</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,6 +196,7 @@
     <MESSAGE value="add Readme" />
     <MESSAGE value="fix link" />
     <MESSAGE value="add part string" />
-    <option name="LAST_COMMIT_MESSAGE" value="add part string" />
+    <MESSAGE value="add collections.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add collections.md" />
   </component>
 </project>
