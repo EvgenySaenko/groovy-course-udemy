@@ -4,28 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="add collections.md">
-      <change afterPath="$PROJECT_DIR$/closures.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlStructures.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Basics.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Collections.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Delegates.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/FluentInterfaces.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/FluentInterfaces2.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/Scope.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/curry.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/exercise.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/params.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/closures/vargs.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/conditional.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/exceptions.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/exercise.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/looping.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/evgenys/groovy-control-structures/truth.groovy" afterDir="false" />
+    <list default="true" id="de6cd1fe-2a79-4202-bb07-c08e75c74361" name="Changes" comment="add controlStructures.md.md">
+      <change afterPath="$PROJECT_DIR$/OOP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RuntimeMetaProgramming.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/images/mop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/images/scheme-mop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/beans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/src/com/therealdanvega/DoubleBean.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/src/com/therealdanvega/Employee.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/src/com/therealdanvega/EmployeeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/src/com/therealdanvega/GroovyBeans.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/beans/src/com/therealdanvega/app.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/classes.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/exercise/TweetDemo.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/inheritance/package-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/inheritance/src/com/therealdanvega/Application.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/inheritance/src/com/therealdanvega/app.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/inheritance/src/com/therealdanvega/domain/IPhone.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/inheritance/src/com/therealdanvega/domain/Phone.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/interfaces/interfaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/interfaces/src/com/therealdanvega/domain/Person.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/interfaces/src/com/therealdanvega/service/IPersonService.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/interfaces/src/com/therealdanvega/service/PersonService.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/methods.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/package-demo/package-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/package-demo/src/com/therealdanvega/Application.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/package-demo/src/com/therealdanvega/controller/HelloController.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/package-demo/src/com/therealdanvega/domain/Person.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/package-demo/src/com/therealdanvega/service/PersonService.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/src/com/therealdanvega/app.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/src/com/therealdanvega/service/IPersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/src/com/therealdanvega/traits/Bird.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/src/com/therealdanvega/traits/FlyingAbility.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/src/com/therealdanvega/traits/SpeakingAbility.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/evgenys/oop/traits/traits.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/evgenys/basics/operators/operators.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +75,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy/src/com/evgenys"
+    "last_opened_file_path": "D:/Develop/projects/groovy/udemy/course-dan-vega/groovy-course-udemy",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy\src\com\evgenys\images" />
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy\src\com\evgenys" />
       <recent name="D:\Develop\projects\groovy\udemy\course-dan-vega\groovy-course-udemy" />
     </key>
@@ -188,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707338822609</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add controlStructures.md.md">
+      <option name="closed" value="true" />
+      <created>1708846400269</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708846400269</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +224,7 @@
     <MESSAGE value="fix link" />
     <MESSAGE value="add part string" />
     <MESSAGE value="add collections.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add collections.md" />
+    <MESSAGE value="add controlStructures.md.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add controlStructures.md.md" />
   </component>
 </project>
